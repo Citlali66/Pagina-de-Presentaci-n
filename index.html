@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="CitlaliQC">
+    <meta name="description" content="Portafolio de desarrollo web de CitlaliQC">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Citlali QC | HTML CSS </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/ogw/AKPQZvzG0pE_J-5rzglIFloj8OBupRo8H6wtTH2GL1a7B8Y=s32-c-mo">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Imagen de WhatsApp 2023-11-11 a las 02.13.43_90aff93d.jpg" alt="Foto de CitlaliQC">
+        <h1>Hola, soy Citlali Quintero Cardenas</h1>
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="data:image/png;base64,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" alt="Logo facultad de ingenieria UNAM.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Citlali Quintero</h2>
+        <p class="seccion-texto">Actualmente soy estudiante de ingenieria mecánica en la Facultad de ingenieria de la UNAM. Tengo una carrea tecnica en Mecatronica basica y poseo conocimientos basicos en algunos lenguajes de programación como son Java, C++, Arduino, HTML y CSS. Me gusta aprender lenguajes de programación y a desarrollar circuitos electricos. </p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>He generado algunas paginas web utilizando HTML y CSS como practica para mi aprendizaje </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Mecatronica basica</p>
+            <p>Mediante la utilización de Arduino y con programación orientada a objetos realice varios proyectos electricos con sensores. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">C++</span>
+              <span class="badge text-bg-primary">Arduino</span>
+              <span class="badge text-bg-primary">Electronica</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Como estudiante ademas de la escuela, he tomado cursos de programación y tambien he tomado varios cursos de idiomas, principalmente de ingles. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Idiomas</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://s3-alpha.figma.com/hub/file/2806765940/f324f9ff-3b3e-450f-82dc-84d32116cb18-cover.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Google clone</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Citlali66/Clone-Google#clone-google" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://clone-google-star.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+
+
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.svg" alt="Foto de Gino">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.svg" alt="Foto de Nora">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Jane Doe (2022) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
