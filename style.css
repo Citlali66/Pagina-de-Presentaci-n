@@ -22,16 +22,16 @@ section {
 h1 {
   font-size: 2.5rem;
   font-family: 'Rubik Dirt', cursive;
-}
+} 
 
 .seccion-oscura {
   color: white;
-  background-color: #1b1b32;
+  background-color: #d00765;
 }
 
 .seccion-clara {
-  color: black;
-  background-color: white;
+  color: rgb(15, 14, 14);
+  background-color: rgb(255, 255, 255);
 }
 
 .seccion-titulo {
@@ -75,14 +75,18 @@ h1 {
 }
 
 .hero-imagen-desarrollador {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 20px;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: #526151;
+}
+
+h1 {
+  color: #55052a;
 }
 
 /* Sobre mi */
@@ -115,13 +119,13 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: #8dc6f4;
 }
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
+  color: rgb(68, 38, 4);
+  background-color: #ef9ec1;
   padding: 8px 19px;
   border-radius: 50%;
 }
@@ -146,15 +150,20 @@ h1 {
 
 .proyectos-recientes {
   padding: 40px;
+  background-color: rgb(244, 237, 243);
+  display: flex;
+  justify-content: center;
 }
 
 .proyectos-recientes img {
-  height: 100%;
+  height: 300px;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  display: block;
-  transition: all 0.2s ease;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  /* transition: all 0.2s ease; */
 }
 
 .proyectos-contenedor {
@@ -265,7 +274,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: rgb(249, 120, 163);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
@@ -347,7 +356,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
   background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  border: 2px solid rgb(29, 13, 253);
 }
 
 .iconos-redes-sociales a:hover i {
